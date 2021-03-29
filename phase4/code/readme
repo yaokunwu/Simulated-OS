@@ -1,0 +1,30 @@
+I have completed all the four phases in project 3.
+
+Commands to run the program:
+
+1. make             //to generate admin.exe and client.exe
+2. mkdir clientDir       //make a folder to contain client side files
+3. mv client.c client.exe prog1 prog1.err prog2.err clientDir   // separate client files from server side
+
+/* run in server side window */
+4. ./admin.exe 1000000 11941   
+
+/* run in client side window (pwd is clientDir) */
+5. ./client.exe 10.176.92.14 11941
+6. s                   // submit
+7. prog1               // normal program
+8. s                   // submit
+9. prog1.err           // program has loading problem
+10. s                   // submit
+11. prog2.err           // program has execution problem
+12. T                   // quit client program
+
+/* run in server side window */
+13. T                   // quit server program   
+
+
+Other than the files required to change,
+1. I added FILE *clientF to PCB because term.c needs the info to send the output back to client
+2. I modified the signiture of the submit_process() in process.c because I need to pass the FILE pointer to it
+3. I added start_submit(int portno) and end_submit() functions to system.c to create and terminate the submit thread.
+4. I added a global FILE *problemF because I need term.c to know where to send back the output of a given file when it has loading problem. (Since in this case, new PCB can not be successfully created, and the term.c need to send backthe response anyway). 

@@ -1,0 +1,11 @@
+phase 1:
+1. finished "cpu.c"
+2. finished "process.c"
+3. removed originally provided "simos.exe", "cpu.o", "process.o"
+4. made a change to the "makefile" to use "paging.o" to compile
+
+phase 2:
+wrote a program called "prog_phase2", which calculates the average of four numbers and prints to terminal.out, with some sleep instructions in between to test
+
+
+You can run simply use 1.make 2. ./simos.exe to run the program

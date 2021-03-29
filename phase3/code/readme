@@ -1,0 +1,19 @@
+I have completed both phase1 and phase2 of project 3.
+
+Phase1: Modification on "term.c".
+Phase2: Modification on "process.c".
+
+The makefile(modified) now compile to "simos.exe" with the new "term.c" and "process.c".
+
+You can simply test the program by:
+make
+./simos.exe
+s
+prog1
+y
+50
+T
+cat terminal.out
+
+
+

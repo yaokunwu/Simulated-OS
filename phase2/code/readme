@@ -1,0 +1,15 @@
+I have completed the whole project 2. All the features required in the project are working well.
+
+Files that are included in this .tar file are used for project 2 phase 3.  If you want to test 'simos.exe', you should go to the submitted .tar file for phase1&2.
+
+Commands to run the program:
+make
+./admin.exe 1000000   //after this, you can run any command provided in simos, such as 'q', 'e', 't', etc.
+s                   // submit
+prog1               // program, provided by the professor
+s                   // submit
+prog_phase2         // program, created from phase 2(Calculate the average)
+T                   // quit the program
+cat terminal.out    // check the output
+
+I did not change any source code.
